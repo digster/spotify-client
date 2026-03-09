@@ -11,3 +11,7 @@ Implement the full Spotify client project from an implementation plan. Includes:
 - Custom exception hierarchy with rate limiting
 - Full test suite with mock factories (118 tests, 88% coverage)
 - Claude Code skill for LLM access
+
+## 2026-03-09
+
+Move Spotify skill from global (`~/.claude/skills/spotify/SKILL.md`) to project-level (`.claude/skills/spotify/SKILL.md`). Clean up hardcoded paths, remove `cd` and `sys.path.insert` hacks, use relative `.env` reference.
